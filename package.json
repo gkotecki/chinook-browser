@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/better-sqlite3": "7.6.4",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "drizzle-kit": "0.18.1",
-    "prettier": "2.8.8"
+    "prettier": "2.8.8",
+    "prettier-plugin-tailwindcss": "0.3.0"
   }
 }
