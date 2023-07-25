@@ -1,5 +1,6 @@
 import { HTMLAttributes, PropsWithChildren } from "react"
 import { twMerge } from "tailwind-merge"
+import { Neu } from "./neumorphism"
 
 export default function NeuBlock() {
   return (
@@ -35,6 +36,8 @@ export default function NeuBlock() {
       <NeuDiv className="h-14 w-14 rounded-full" depth={20} concave>
         E
       </NeuDiv>
+
+      <Neu.Knob />
     </div>
   )
 }
