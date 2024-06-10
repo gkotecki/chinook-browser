@@ -1,0 +1,14 @@
+version: "3.1"
+
+services:
+
+  db:
+    # https://hub.docker.com/_/postgres
+    image: postgres:15.3-alpine3.18
+    restart: always
+    environment:
+      # POSTGRES_DB: defaults to the value of POSTGRES_USER
+      POSTGRES_USER: postgres # defaults to 'postgres' when not set
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432" # expondo a porta padrão do postgres
